@@ -1,4 +1,6 @@
 """
+![image](https://github.com/user-attachments/assets/af416074-7437-497a-968e-b0efc6ee4ae2)
+
 # AWS ECS RDS Infrastructure
 
 This repository contains Terraform configurations for deploying a containerized application on AWS ECS with RDS backend.
