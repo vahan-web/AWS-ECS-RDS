@@ -23,3 +23,29 @@ terraform apply -var-file="terraform.tfvars" -lock=false
 
 After applying, it will provide you with the ALB DNS endpoint, by which the application will be accessible publicly.
 
+## Requirements
+
+VPC and Network Components ✅
+- Region and AZ of choice ✅
+- Subnets (public, private, database) ✅
+- Route tables ✅
+- Security groups ✅
+- NAT gateway ✅
+- Internet gateway ✅
+
+Web Application Servers (ECS) ✅
+- Running on ECS ✅
+- Behind ALB ✅
+- No public IPs ✅
+- Not directly accessible from internet ✅
+- Has internet connectivity (via NAT) ✅
+
+Load Balancer ✅
+- Publicly accessible ✅
+- In public subnet ✅
+- Proper security group ✅
+
+Database ✅
+- PostgreSQL 17 ✅
+- Separate subnet ✅
+- Restricted access from web apps only ✅
