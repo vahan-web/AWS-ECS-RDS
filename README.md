@@ -1,6 +1,4 @@
-"""
 ![image](https://github.com/user-attachments/assets/af416074-7437-497a-968e-b0efc6ee4ae2)
-
 # AWS ECS RDS Infrastructure
 
 This repository contains Terraform configurations for deploying a containerized application on AWS ECS with RDS backend.
@@ -24,4 +22,4 @@ terraform init
 terraform apply -var-file="terraform.tfvars" -lock=false
 
 After applying, it will provide you with the ALB DNS endpoint, by which the application will be accessible publicly.
-"""
+
